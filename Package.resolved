@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "decolor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/earmand/DEColor.git",
+      "state" : {
+        "revision" : "fc45bb1d45418206e25ccfdf3194b05d7e4e9d6b",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "defoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/earmand/DEFoundation.git",
+      "state" : {
+        "revision" : "b6e5c8d2cbb969f691aaf3c5fc91f48909e7ef43",
+        "version" : "1.0.5"
+      }
+    }
+  ],
+  "version" : 2
+}

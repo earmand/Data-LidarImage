@@ -71,7 +71,7 @@ extension Data {
         return newLidarData
     }
     
-    func lidarbitmapImageRep( gridWidth: Int, gridHeight: Int, baseValue: Int, maxValue: Int, alpha: Int, colors: Int) -> NSBitmapImageRep?{
+    public func lidarbitmapImageRep( gridWidth: Int, gridHeight: Int, baseValue: Int, maxValue: Int, alpha: Int, colors: Int) -> NSBitmapImageRep?{
         
         if (false) { print(String(format:"\(timestamp) \(#function) [\(#line)] : %@","*"))  }
         
@@ -134,7 +134,7 @@ extension Data {
     }
     
     // NOT USED*********
-    func lidarImage( gridWidth: Int, gridHeight: Int, baseValue: Int, maxValue: Int, alpha: Int, colors: Int) -> NSImage?{
+    public func lidarImage( gridWidth: Int, gridHeight: Int, baseValue: Int, maxValue: Int, alpha: Int, colors: Int) -> NSImage?{
         if (false) { print(String(format:"\(timestamp) \(#function) [\(#line)] : %@","*"))  }
         
         if self.count != gridWidth*gridHeight*2 {
