@@ -14,7 +14,7 @@ import DEColor
 public extension Data {
     var timestamp: String { return String(format:"%0.4f",NSDate().timeIntervalSince1970) }
     
-    public func lidarImageScaled(from: MKTileOverlayPath, to: MKTileOverlayPath) -> Data? {
+    func lidarImageScaled(from: MKTileOverlayPath, to: MKTileOverlayPath) -> Data? {
         
         let  gridWidth      = 256
         let  gridHeight     = 256
@@ -71,7 +71,7 @@ public extension Data {
         return newLidarData
     }
     
-    public func lidarbitmapImageRep( gridWidth: Int, gridHeight: Int, baseValue: Int, maxValue: Int, alpha: Int, colors: Int) -> NSBitmapImageRep?{
+    func lidarbitmapImageRep( gridWidth: Int, gridHeight: Int, baseValue: Int, maxValue: Int, alpha: Int, colors: Int) -> NSBitmapImageRep?{
         
         if (false) { print(String(format:"\(timestamp) \(#function) [\(#line)] : %@","*"))  }
         
@@ -134,7 +134,7 @@ public extension Data {
     }
     
     // NOT USED*********
-    public func lidarImage( gridWidth: Int, gridHeight: Int, baseValue: Int, maxValue: Int, alpha: Int, colors: Int) -> NSImage?{
+    func lidarImage( gridWidth: Int, gridHeight: Int, baseValue: Int, maxValue: Int, alpha: Int, colors: Int) -> NSImage?{
         if (false) { print(String(format:"\(timestamp) \(#function) [\(#line)] : %@","*"))  }
         
         if self.count != gridWidth*gridHeight*2 {
