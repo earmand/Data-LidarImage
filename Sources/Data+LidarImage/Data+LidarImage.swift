@@ -11,7 +11,7 @@ import MapKit
 
 import DEColor
 
-extension Data {
+public extension Data {
     var timestamp: String { return String(format:"%0.4f",NSDate().timeIntervalSince1970) }
     
     public func lidarImageScaled(from: MKTileOverlayPath, to: MKTileOverlayPath) -> Data? {
